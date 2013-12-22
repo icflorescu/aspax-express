@@ -1,0 +1,34 @@
+{
+  "name": "aspax-express",
+  "version": "0.6.0",
+  "description": "Module enabling Express.js to handle assets built and packaged by ASPAX.",
+  "repository": "git://github.com/icflorescu/aspax-express",
+  "keywords": [
+    "express.js",
+    "connect",
+    "coffee",
+    "iced",
+    "ls",
+    "jade",
+    "less",
+    "stylus",
+    "js",
+    "css",
+    "assets",
+    "compilation",
+    "concatenation",
+    "minification",
+    "fingerprinting",
+    "compression",
+    "gzip",
+    "automation",
+    "workflow"
+  ],
+  "author": {
+    "name": "Ionut-Cristian Florescu",
+    "email": "ionut.florescu@gmail.com",
+    "url": "https://coderwall.com/icflorescu"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
