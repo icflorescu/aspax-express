@@ -45,7 +45,7 @@ Quick steps:
 4. Add `require('aspax-express')(app, path.join(__dirname, 'aspax.json'))` **before other static middleware** in your main application script (usually `/application/app.js`):
 
         var express = require('express')
-        , app = express();
+          , app = express();
 
         require('aspax-express')(app, path.join(__dirname, 'aspax.json'));
         ...
