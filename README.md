@@ -9,13 +9,13 @@ Run this in your application folder:
 ## Usage
 Quick steps:
 
-1. Create a folder structure for your project:
+1. Create a folder structure similar to this one for your project:
 
-        /assets             -> asset sources
-        /application        -> main Express.js application folder
-        /application/public -> public static folder
+        /assets        -> asset sources
+        /server        -> main Express.js application folder
+        /server/public -> public static folder
 
-   Put all your asset sources in `/assets`; **don't put anything** in `/application/public`, as **it will be overwritten**.
+   Notice: put all your asset sources in `/assets`; **don't put anything** in `/application/public`, as **it will be overwritten**.
 
 2. Create `/assets/aspax.yml` describing your assets configuration:
 
@@ -36,13 +36,23 @@ Quick steps:
 
         ...
 
-3. Install ASPAX globally and [install this module](#installation) in your application, if you haven't already:
+3. Install ASPAX globally if you haven’t already, [install aspax-express](#installation) in your application, and also make sure to install any necessary source handling plugins:
 
+        # Global ASPAX
         npm install aspax -g
-        cd application
+
+        cd server
+
+        # ASPAX-Express
         npm install aspax-express --save
 
-4. Add `require('aspax-express')(app, path.join(__dirname, 'aspax.json'))` **before other static middleware** in your main application script (usually `/application/app.js`):
+        # Source handling plugins
+        npm install aspax-coffee-handler --save-dev
+        npm install aspax-ls-handler --save-dev
+        npm install aspax-jade-handler --save-dev
+        npm install aspax-styl-handler --save-dev
+
+4. Add `require('aspax-express')(app, path.join(__dirname, 'aspax.json'))` **before other static middleware** in your main application script (usually `/server/app.js`):
 
         var express = require('express')
           , app = express();
@@ -62,7 +72,7 @@ Quick steps:
         //- link(rel="shortcut icon", href="/favicon.png")
         link(rel="shortcut icon", href=asset('/favicon.png'))
 
-6. In `/application` folder you can run any of these:
+6. Then, in your `/server` folder you can run:
 
         # watch and build on-the-fly during development
         aspax -s ../assets watch
