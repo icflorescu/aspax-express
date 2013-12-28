@@ -15,7 +15,7 @@ Quick steps:
         /server        -> main Express.js application folder
         /server/public -> public static folder
 
-   Notice: put all your asset sources in `/assets`; **don't put anything** in `/application/public`, as **it will be overwritten**.
+   Notice: put all your asset sources in `/assets`; **don't put anything** in `/server/public`, as **it will be overwritten**.
 
 2. Create `/assets/aspax.yml` describing your assets configuration:
 
@@ -75,13 +75,13 @@ Quick steps:
 6. Then, in your `/server` folder you can run:
 
         # watch and build on-the-fly during development
-        aspax -s ../assets watch
+        aspax -s ../client watch
 
         # build for development
-        aspax -s ../assets build
+        aspax -s ../client build
 
         # pack for production (will compile, concat, minify, compress and fingerprint)
-        aspax -s ../assets pack
+        aspax -s ../client pack
 
         # clean everything
         aspax -s ../client clean
@@ -96,7 +96,7 @@ Quick steps:
 
         # production
         #
-        NODE_ENV=development node start.js
+        NODE_ENV=production node start.js
 
    Notice: if you're using `nodemon` in development mode, add `aspax.json` to `.nodemonignore` to avoid restarting the application whenever an asset is rebuilt.
 
