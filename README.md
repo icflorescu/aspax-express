@@ -52,16 +52,13 @@ Quick steps:
         npm install aspax-jade-handler --save-dev
         npm install aspax-styl-handler --save-dev
 
-4. Add `require('aspax-express')(app, path.join(__dirname, 'aspax.json'))` **before other static middleware** in your main application script (usually `/server/app.js`):
+4. Add `require('aspax-express')(app, path.join(__dirname, 'aspax.json'))` **before handling views** in your main application script (usually `/server/app.js`):
 
         var express = require('express')
           , app = express();
 
+        ...
         require('aspax-express')(app, path.join(__dirname, 'aspax.json'));
-        ...
-        app.use(express.static(path.join(__dirname, 'public')));
-
-        ...
         app.use app.router;
         app.get('/:page', function(req, res) {
         ...
