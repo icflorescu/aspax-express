@@ -80,7 +80,7 @@ Quick steps:
         # build for development
         aspax -s ../client build
 
-        # pack for production (will compile, concat, minify, compress and fingerprint)
+        # pack for production (will compile, concat, minify and fingerprint)
         aspax -s ../client pack
 
         # clean everything
