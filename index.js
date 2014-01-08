@@ -13,23 +13,4 @@ module.exports = function(app, assetsJsonMap) {
     return mode == 'production' ? assets[asset] : asset;
   };
 
-  // Middleware to adjust response headers for gzipped assets in production.
-  if (mode == 'production') {
-    app.use(function(req, res, next) {
-      var rp = req.path;
-
-      if (rp.slice(-3) === '.gz') {
-        res.set('Content-Encoding', 'gzip');
-
-        // Add the appropriate headers for .css and .js files to avoid console warnings in some browsers
-        if (rp.slice(-7, -3) === '.css') {
-          res.set('Content-Type', 'text/css');
-        } else if (rp.slice(-6, -3) === '.js') {
-          res.set('Content-Type', 'application/javascript');
-        }
-      }
-      next();
-    });
-  }
-
 }
