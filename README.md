@@ -67,7 +67,7 @@ Quick steps:
 5. Wrap the URLs in your views into `asset()` function calls:
 
         //- link(rel="shortcut icon", href="/favicon.png")
-        link(rel="shortcut icon", href=asset('/favicon.png'))
+        link(rel="shortcut icon", href=asset('favicon.png'))
 
 6. Then, in your `/server` folder you can run:
 

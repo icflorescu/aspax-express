@@ -1,6 +1,6 @@
 {
   "name": "aspax-express",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "Module enabling Express.js to handle assets built and packaged by ASPAX.",
   "repository": "git://github.com/icflorescu/aspax-express",
   "homepage": "http://aspax.github.io",
