@@ -100,10 +100,7 @@ Quick steps:
 Have a look at [this demo repository](https://github.com/icflorescu/aspax-demo) to see it in action.
 
 ## What does it **actually** do?
-In plain English:
-
-- It does nothing in development mode;
-- In production mode, on application startup it reads the map produced by `aspax pack` and registers the `app.locals.asset()` method you can use translate all the asset URLs in your views.
+In plain English, on application startup it reads the map produced by `aspax pack` and registers an `app.locals.asset()` method you'll have to use in your views to translate all the asset URLs.
 
 Have a look at the main file [here](https://github.com/icflorescu/aspax-express/blob/master/index.js) for details.
 
