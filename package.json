@@ -1,9 +1,7 @@
 {
   "name": "aspax-express",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "description": "Module enabling Express.js to handle assets built and packaged by ASPAX.",
-  "repository": "git://github.com/icflorescu/aspax-express",
-  "homepage": "http://aspax.github.io",
   "keywords": [
     "express.js",
     "connect",
@@ -23,11 +21,25 @@
     "automation",
     "workflow"
   ],
+  "dependencies": {},
+  "engines": {
+    "node": ">=0.8.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/icflorescu/aspax-express"
+  },
+  "bugs": {
+    "url": "https://github.com/icflorescu/aspax-express/issues"
+  },
   "author": {
     "name": "Ionut-Cristian Florescu",
     "email": "ionut.florescu@gmail.com",
     "url": "https://coderwall.com/icflorescu"
   },
-  "license": "MIT",
-  "dependencies": {}
+  "contributors": [{
+    "name": "Ionut-Cristian Florescu",
+    "email": "ionut.florescu@gmail.com"
+  }],
+  "license": "MIT"
 }
