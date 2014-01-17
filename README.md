@@ -1,4 +1,6 @@
 ## What's this?
+[![NPM version](https://badge.fury.io/js/aspax-express.png)](http://badge.fury.io/js/aspax-express)
+
 A module that enables [Express.js](http://expressjs.com) to serve assets built and packaged by [ASPAX](http://aspax.github.io).
 
 ## Installation
