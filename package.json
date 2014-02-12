@@ -1,6 +1,6 @@
 {
   "name": "aspax-express",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Module enabling Express.js to handle assets built and packaged by ASPAX.",
   "keywords": [
     "express.js",
