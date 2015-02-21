@@ -1,6 +1,8 @@
 ## What's this?
-[![NPM version](https://badge.fury.io/js/aspax-express.png)](http://badge.fury.io/js/aspax-express)
-[![Dependency Status](https://david-dm.org/icflorescu/aspax-express.png)](https://david-dm.org/icflorescu/aspax-express)
+[![NPM version][npm-image]][npm-url]
+[![Dependency Status][david-image]][david-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
 A module that enables [Express.js](http://expressjs.com) to serve assets built and packaged by [ASPAX](http://aspax.github.io).
 
@@ -108,4 +110,12 @@ In plain English, on application startup it reads the map produced by `aspax pac
 Have a look at the main file [here](https://github.com/icflorescu/aspax-express/blob/master/index.js) for details.
 
 ## Endorsing the author
-If you find this piece of software useful, please [tweet about ASPAX](http://twitter.com/share?text=Checkout%20ASPAX%2C%20the%20simple%20Node.js%20asset%20packager!&url=http%3A%2F%2Faspax.github.io&hashtags=aspax&via=icflorescu) and/or [![endorse](https://api.coderwall.com/icflorescu/endorsecount.png)](https://coderwall.com/icflorescu) me on Coderwall!
+
+[npm-image]: https://img.shields.io/npm/v/aspax-express.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/aspax-express
+[david-image]: http://img.shields.io/david/icflorescu/aspax-express.svg?style=flat-square
+[david-url]: https://david-dm.org/icflorescu/aspax-express
+[license-image]: http://img.shields.io/npm/l/aspax-express.svg?style=flat-square
+[license-url]: LICENSE
+[downloads-image]: http://img.shields.io/npm/dm/aspax-express.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/aspax-express
